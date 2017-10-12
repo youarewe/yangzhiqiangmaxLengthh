@@ -21,6 +21,13 @@ public class Main {
 		int res = maxLength("bbb");
 		assertEquals(1, res);
 	}
+	@Test
+	public void test2(){
+		
+		int res = maxLength("abcabcbb");
+		assertEquals(3, res);
+	}
+	
 	
 	public static int maxLength(String str){  
         if(str==null||str.equals("")){  
