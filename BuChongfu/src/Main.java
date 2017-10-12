@@ -42,7 +42,11 @@ public class Main {
 		int res = maxLength(b.toString());
 		assertEquals(1, res);
 	}
-	
+	public void test5(){
+		
+		int res = maxLength("abc");
+		assertEquals(3, res);
+	}
 	
 	
 	public static int maxLength(String str){  
