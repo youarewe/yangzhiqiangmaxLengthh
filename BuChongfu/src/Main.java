@@ -1,4 +1,4 @@
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -33,6 +33,16 @@ public class Main {
 		int res = maxLength("");
 		assertEquals(0, res);
 	}
+	@Test
+	public void test4(){
+		StringBuffer b = new StringBuffer();
+		for(int i=0;i<30000;i++){
+			b.append("s");
+		}
+		int res = maxLength(b.toString());
+		assertEquals(1, res);
+	}
+	
 	
 	
 	public static int maxLength(String str){  
